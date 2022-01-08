@@ -1,0 +1,34 @@
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+a[href]:hover {
+    color: red;
+    width: 500px;
+}
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: azure;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: bisque;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+}
