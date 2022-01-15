@@ -5,57 +5,56 @@ html {
 
 }
 body {
-    margin: 0 auto;
+    margin: 1% auto;
     padding: 0 20px 20px 20px;
     width: 50%;
     background-color: #f7fcff;
     border: 3px solid black;
 }
-h1 {
+h1, h2 {
     margin: 0;
     padding: 20px 0;
     color: black;
     text-align: center;
 }
-#logo {
+#contacts {
+    padding: 20px 0;
+    color: black;
+    text-align: center;
+    border: 3px solid black;
+}
+#logo, #team_photo {
     border-radius: 10px;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
 }
-#team_photo {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+#gmail, #twitter, #facebook, #instagram, #youtube, #telegram, #whatsapp {
+    width: 50px;
 }
-#p1 {
+#p1, #p2, #p3 {
     font-size: 20px;
     line-height: 1.1;
     letter-spacing: 1px;
     padding: 10px;
     border: solid 1px;
 }
-#p2 {
-    font-size: 20px;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    padding: 10px;
-    border: solid 1px;
-}
-#p3 {
-    font-size: 20px;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    padding: 10px;
-    border: solid 1px;
-}
-#up1 {
+
+#up1, #up2 {
     font-size: 12px;
 }
-#up2 {
-    font-size: 12px;
+
+ul {
+    background: aliceblue;
+    padding: 10px;
+    border: solid 1px;
 }
+
+li {
+    margin-left: 20px;
+}
+
 
 
