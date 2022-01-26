@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/Advanced_text_formatting.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body>
+<h1>Продвинутое форматирование текста</h1>
+<h2>Списки описания</h2>
+<h3>Используемые тэги</h3>
+<p>В списках описания используется иная оболочка, чем в других типах списков —
+    <code class="single-tags">&lt;dl&gt;</code>
+    (от <i><b>description list</b></i>); кроме того, каждый термин завёрнут в
+    элемент <code class="single-tags">&lt;dt&gt;</code> (<i><b>description term</b>></i>> — термин
+    для описания) и каждое определение завёрнуто в элемент <code class="single-tags">&lt;dd&gt;</code> (<i><b>description definition</b></i>
+    —
+    описание определения).</p>
+<h3>Структура</h3>
+<div class="code-example">
+<pre class="html-syntax">
+<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span
+        class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span
+            class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>b</span><span class="token punctuation">&gt;</span></span>Бекон<span
+        class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>/b</span><span
+        class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>/dt</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span
+            class="token punctuation">&gt;</span></span>Скрепляет мир вокруг<span class="token tag"><span
+        class="token tag"><span class="token punctuation">&lt;</span>/dd</span><span
+        class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span
+            class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>b</span><span class="token punctuation">&gt;</span></span>Яйца<span
+        class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>/b</span><span
+        class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>/dt</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span
+            class="token punctuation">&gt;</span></span>Скрепляют пироги вокруг.<span class="token tag"><span
+        class="token tag"><span class="token punctuation">&lt;</span>/dd</span><span
+        class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span
+            class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>b</span><span class="token punctuation">&gt;</span></span>Кофе<span
+        class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>/b</span><span
+        class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>/dt</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span
+            class="token punctuation">&gt;</span></span>Рычаг, движущий планетами.<span class="token tag"><span
+        class="token tag"><span class="token punctuation">&lt;</span>/dd</span><span
+        class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span
+            class="token punctuation">&gt;</span></span>Светло-коричневого цвета.<span class="token tag"><span
+        class="token tag"><span class="token punctuation">&lt;</span>/dd</span><span
+        class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span
+        class="token punctuation">&gt;</span></span>
+</code></pre>
+</div>
+<h3>Результат</h3>
+<div class="html-results">
+<dl>
+    <dt><b>Бекон</b></dt>
+    <dd>Скрепляет мир вокруг.</dd>
+    <dt><b>Яйца</b></dt>
+    <dd>Скрепляют пироги вокруг.</dd>
+    <dt><b>Кофе</b></dt>
+    <dd>Рычаг, движущий планетами.</dd>
+    <dd>Светло-коричневого цвета.</dd>
+</dl>
+</div>
+<h2>Цитаты</h2>
+<h3>Блочные цитаты | Используемые тэги</h3>
+<p>Если часть содержимого уровня блока (будь то абзац, несколько абзацев, список и т. д.)
+    цитируется из другого источника, вы должны обернуть её внутри элемента <code class="single-tags">&lt;blockquote&gt;</code>,
+    чтобы обозначить это, и указать URL-адрес, указывающий на источник цитаты, внутри атрибута
+    <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote#attr-cite">cite</a>.</p>
+<h3>Структура</h3>
+<div class="code-example">
+<pre class="html-syntax">
+<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span
+        class="token attr-name">cite</span><span class="token attr-value"><span
+        class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote<span
+        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+          class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>HTML-элемент<span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span
+            class="token punctuation">&gt;</span></span><span class="token entity named-entity"
+                                                              title="<">&amp;lt;</span>blockquote<span
+            class="token entity named-entity" title=">">&amp;gt;</span><span class="token tag"><span
+            class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span
+            class="token punctuation">&gt;</span></span> (от англ. <span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>HTML Block Quotation Element<span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span
+            class="token punctuation">&gt;</span></span>) указывает на то, что заключённый в нём текст является развёрнутой цитатой.<span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span
+        class="token punctuation">&gt;</span></span></code></pre>
+</div>
+<div class="code-example">
+<pre class="html-syntax"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span><span
+        class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span
+            class="token attr-name"> cite</span><span class="token attr-value"><span
+            class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.huxley.net/bnw/four.html<span
+            class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+            class="token punctuation">&gt;</span></span>Words can be like X-rays, if you use them properly—they’ll go through anything.
+    You read and you’re pierced.<span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>/p</span><span
+        class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span
+            class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span><span
+            class="token punctuation">&gt;</span></span>—Aldous Huxley,<span class="token tag"><span
+        class="token tag"><span class="token punctuation">&lt;</span>cite</span><span
+        class="token punctuation">&gt;</span></span>Brave New World<span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;/</span>cite</span><span
+        class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span
+        class="token punctuation">&gt;</span></span></code></pre>
+</div>
+<h3>Результат</h3>
+<blockquote cite="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote">
+    <p><strong>HTML-элемент <code>&lt;blockquote&gt;</code></strong> (от англ. <em>HTML Block Quotation Element</em>)
+        указывает на то, что заключённый в нём текст является развёрнутой цитатой.</p>
+</blockquote>
+<figure>
+    <blockquote cite="https://www.huxley.net/bnw/four.html">
+        <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re
+            pierced.</p>
+    </blockquote>
+    <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+</figure>
+<h3>Строчные цитаты | Используемые тэги</h3>
+<p>Строчные цитаты работают точно так же, за исключением того, что они используют элемент <a
+        title="Currently only available in English (US)"
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"><code class="single-tags">&lt;q&gt;</code>
+    <span>(en-US)</span></a>. Например, следующий кусочек разметки содержит цитату из страницы <code class="single-tags">&lt;q&gt;</code>
+    MDN:</p>
+<h3>Структура</h3>
+<div class="code-example"><pre class="html-syntax"><code><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Элемент цитирования — <span
+        class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span
+        class="token punctuation">&gt;</span></span><span class="token entity named-entity"
+                                                          title="<">&amp;lt;</span>q<span
+        class="token entity named-entity" title=">">&amp;gt;</span><span class="token tag"><span class="token tag"><span
+        class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span> — <span
+        class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span> <span
+        class="token attr-name">cite</span><span class="token attr-value"><span
+        class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q<span
+        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>предназначен
+для коротких цитат, не требующих прерывания абзаца<span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span>.<span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span
+            class="token punctuation">&gt;</span></span></code></pre>
+</div>
+<h3>Результат</h3>
+<p class="string-quote">Элемент цитирования — <code class="single-tags">&lt;q&gt;</code> — <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">предназначен
+    для коротких цитат, не требующих прерывания абзаца</q>.</p>
+<h2>Цитирование</h2>
+<p>Содержание атрибута <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote#attr-cite"><code
+        class="single-tags">cite</code></a> выглядит полезным, но, к сожалению, браузерам, программам&nbsp;чтения с
+    экрана и т.&nbsp;д. оно на самом деле мало чем помогает. Невозможно заставить браузер отображать содержимое атрибута&nbsp;<code
+            class="single-tags">&lt;cite&gt;</code> без написания собственного решения с использованием JavaScript или
+    CSS. Если вы хотите, чтобы источник цитирования был доступен на странице, лучший способ его разметки - поместить
+    элемент <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/cite"><code
+            class="single-tags">&lt;cite&gt;</code></a> рядом с элементом цитаты (или внутри него). Это действительно
+    будет означать то, что имя источника цитаты —&nbsp;то есть имя книги или имя человека, которое произвело цитату, —
+    будет включено в текст. Нет причин, по которым вы не могли бы связать текст внутри <code class="single-tags">&lt;cite&gt;</code>
+    с источником цитаты:</p>
+<h3>Структура</h3>
+<div class="code-example"><pre class="html-syntax"><code><span class="token tag"><span
+        class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Как указано в статье о <span
+        class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span
+        class="token attr-name">href</span><span class="token attr-value"><span
+        class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote<span
+        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span
+        class="token punctuation">&gt;</span></span>блочных цитатах<span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span
+            class="token punctuation">&gt;</span></span>:
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span
+        class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span
+        class="token attr-name">cite</span><span class="token attr-value"><span
+        class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote<span
+        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+          class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>HTML-элемент<span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span
+            class="token punctuation">&gt;</span></span><span class="token entity named-entity"
+                                                              title="<">&amp;lt;</span>blockquote<span
+            class="token entity named-entity" title=">">&amp;gt;</span><span class="token tag"><span
+            class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span
+            class="token punctuation">&gt;</span></span> (от англ. <span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>HTML Block
+  Quotation Element<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span
+            class="token punctuation">&gt;</span></span>) указывает на то, что заключённый в нем текст является развёрнутой цитатой.<span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span
+        class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span
+        class="token punctuation">&gt;</span></span>Элемент цитирования — <span class="token tag"><span
+            class="token tag"><span class="token punctuation">&lt;</span>code</span><span
+            class="token punctuation">&gt;</span></span><span class="token entity named-entity"
+                                                              title="<">&amp;lt;</span>q<span
+            class="token entity named-entity" title=">">&amp;gt;</span><span class="token tag"><span
+            class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span> — <span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span> <span
+            class="token attr-name">cite</span><span class="token attr-value"><span
+            class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q<span
+            class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>предназначен
+для коротких цитат, не требующих прерывания абзаца<span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span>. -- <span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span
+            class="token attr-name">href</span><span class="token attr-value"><span
+            class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q<span
+            class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span
+        class="token punctuation">&gt;</span></span>Строчные цитаты<span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span
+            class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span
+            class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span
+            class="token punctuation">&lt;/</span>p</span><span
+            class="token punctuation">&gt;</span></span></code></pre>
+</div>
+<h3>Результат</h3>
+<p>Как указано в статье о <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote">
+    <cite>блочных цитатах</cite></a>:
+</p>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    <p><strong>HTML-элемент<code>&lt;blockquote&gt;</code></strong> (от англ. <em>HTML Block
+        Quotation Element</em>) указывает на то, что заключённый в нем текст является развёрнутой цитатой.</p>
+</blockquote>
+<p>Элемент цитирования — <code>&lt;q&gt;</code> — <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">предназначен
+    для коротких цитат, не требующих прерывания абзаца</q>. -- <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+    <cite>Строчные цитаты</cite></a>.</p>
+
+<p><a href="../pdfs/ticket.pdf" target="_blank" title="Page on PDF">Download on PDF </a></p>
+<ul>
+    <li>Home page of project</li>
+    <li><a href="../contacts/contacts.html#feedback">Feedback</a>.</li>
+    <li><a href="../index.html#Заголовок_страницы">Home</a></li>
+</ul>
+</body>
+</html>

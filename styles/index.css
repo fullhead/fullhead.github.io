@@ -1,14 +1,14 @@
 html {
     font-family: 'Source Serif Pro', serif;
-    font-size: 20px;
-    background-color: azure;
+    font-size: 18px;
+    background-color: #fff;
 
 }
 body {
     margin: 1% auto;
     padding: 0 20px 20px 20px;
     width: 90%;
-    background-color: #f7fcff;
+
     border: 3px solid black;
 }
 h1, h2 {
@@ -17,23 +17,14 @@ h1, h2 {
     color: black;
     text-align: center;
 }
-#contacts {
-    padding: 20px 0;
-    color: black;
-    text-align: center;
-    border: 3px solid black;
-}
 #logo, #team_photo {
-    border-radius: 10px;
+
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
 }
 
-#gmail, #twitter, #facebook, #instagram, #youtube, #telegram, #whatsapp {
-    width: 50px;
-}
 #p1, #p2, #p3 {
     font-size: 20px;
     line-height: 1.1;
@@ -42,9 +33,6 @@ h1, h2 {
     border: solid 1px;
 }
 
-#up1, #up2 {
-    font-size: 12px;
-}
 
 ul {
     background: aliceblue;
@@ -55,6 +43,18 @@ ul {
 li {
     margin-left: 20px;
 }
-
-
-
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+figcaption {
+    background-color: silver;
+    color: black;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}

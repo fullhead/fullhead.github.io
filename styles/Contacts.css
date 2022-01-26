@@ -1,0 +1,44 @@
+html {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    background-color: #fff;
+
+}
+body {
+    margin: 1% auto;
+    padding: 0 20px 20px 20px;
+    width: 90%;
+
+    border: 3px solid black;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: black;
+    text-align: center;
+}
+ul {
+    background: aliceblue;
+    padding: 10px;
+    border: solid 1px;
+}
+
+li {
+    margin-left: 20px;
+}
+#contacts {
+    padding: 20px 0;
+    color: black;
+    text-align: center;
+}
+#gmail, #twitter, #facebook, #instagram, #youtube, #telegram, #whatsapp {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
