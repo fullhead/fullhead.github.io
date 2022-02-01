@@ -1,22 +1,57 @@
 html {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 18px;
     background-color: #fff;
+    box-sizing: border-box;
+    color: #1b1b1b;
+}
+*, :after, :before {
+    box-sizing: border-box;
 }
 body {
-    margin: 1% auto;
-    padding: 0 20px 20px 20px;
-    width: 90%;
-    border: 3px solid black;
-}
-h1, h2 {
+    color: #1b1b1b;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: -.0027777778rem;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
     margin: 0;
-    padding: 20px 0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+main {
+    margin: 0 0 150px 450px;
+    padding: 0 20px 20px 20px;
+    width: 65%;
+}
+
+h1 {
+    color: #1b1b1b;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    box-sizing: border-box;
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    letter-spacing: .035rem;
+    line-height: 1.2;
+    font-size: 45px;
+    margin: 0;
+    word-break: break-word;
+}
+header {
+    padding: 36px 24px 24px;
+}
+.search {
+    font-family: 'Source Serif Pro', serif;
+    box-sizing: border-box;
+}
+h2 {
+    margin: 0;
+    padding: 10px 0;
     color: black;
     text-align: center;
 }
 h3 {
-    margin: 30px 0 15px 0;
+    margin: 20px 0 15px 0;
 }
 p {
     font-size: 20px;
@@ -86,32 +121,176 @@ figcaption {
     padding: 24px;
     background-color: #f4f4f4;
 }
-.html-results {
-    color: #1b1b1b;
-    box-sizing: border-box;
-    border-left: 6px solid #08a7ff;
-    font-size: 1rem;
-    line-height: 1.4;
-    margin: 0 0 24px;
-    max-width: 100%;
-    overflow: auto;
-    padding: 12px;
-    background-color: #f4f4f4;
-}
-code {
-
-}
 ul {
-    background: aliceblue;
     padding: 10px;
-    border: solid 1px;
 }
 li {
     margin-left: 20px;
 }
+#back-page {
+    text-align: left;
+}
+#home-page {
+    text-align: center;
+}
+#next-page {
+    text-align: right;
+}
 
+table.text  {
+    margin: 0;
+    padding: 25px 0 0 0;
+    width:  100%; /* Ширина таблицы */
+}
+td.right { /* Правая ячейка */
+    text-align: right;
+}
+td.center {
+    text-align: center;
+}
+td.left {
+    text-align: left;
+}
+.button {
+    background-color: #005282;
+    border: 2px solid #005282;
+    color: #fff;
+    border-radius: 4px;
+}
+#contacts {
+    padding: 20px 0;
+    color: black;
+    text-align: center;
+}
+#gmail, #twitter, #facebook, #instagram, #youtube, #telegram, #whatsapp {
+    width: 50px;
+}
+/*footer {*/
+/*    max-width: 100%;*/
+/*    background-color: gray;*/
+/*    color: #fff;*/
+/*    padding: 48px 24px;*/
+/*    position: relative;*/
+/*}*/
+#feedback {
+    text-align: center;
+}
+#wrapper {
+    width: 800px;
+//background-color:red;
+}
 
+#left {
+    width: 200px;
+    float: left;
+    border: 1px solid blue;
+    height: 500px;
+}
 
+#right {
+    width: 200px;
+    float: right;
+    border: 1px solid blue;
+    height: 500px;
+}
+
+#center {
+    width: 380px;
+    background-color: green;
+    margin:0 auto;
+    height: 500px;
+}
+
+#clear {
+    clear: both;
+}
+
+.page-footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 48px 24px;
+    position: relative;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+footer {
+    display: block;
+}
+.page-footer .content-container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.content-container {
+    display: grid;
+}
+.content-container .page-footer-logo {
+    grid-row: 1/2;
+}
+.content-container .page-footer-logo {
+    grid-column: 1/3;
+}
+.page-footer-logo {
+    margin-bottom: 24px;
+}
+div {
+    display: block;
+}
+.content-container .social-mdn {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.page-footer .social {
+    align-items: center;
+    display: flex;
+}
+.content-container .social-moz {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.content-container .footer-legal {
+    grid-row: 7/8;
+    grid-column: 1/3;
+}
+.page-footer .footer-legal {
+    padding-bottom: 20px;
+}
+/*Селектор с атрибутом. Определяет значение для всех тэгов этого вида, у которых есть класс */
+ul[class] {
+    list-style: none; /*Убирает точки на начале несортированного списка*/
+    padding: 25px; /*Отступы с внутренней стороны элемента со всех сторон*/
+}
+li {
+    list-style: none;
+}
+/*blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, h5, li, ol[class], p, ul[class] {*/
+/*    margin: 0;*/
+/*}*/
+body {
+    margin: 0;
+}
+/*ul {*/
+/*    display: block;*/
+/*    list-style-type: disc;*/
+/*    margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0;*/
+/*    margin-inline-end: 0;*/
+/*    padding-inline-start: 40px;*/
+/*}*/
+
+.inline-block {
+    display: inline-block;
+    border: 3px solid black;
+}
+.block {
+    display: block;
+    border: 3px solid black;
+}
+.inline {
+    border: 3px solid black;
+    display: inline;
+}
 
 
 

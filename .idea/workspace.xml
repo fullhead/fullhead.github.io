@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd57cfde-de06-4921-880b-a8faf2707acd" name="Changes" comment="Add contacts">
-      <change afterPath="$PROJECT_DIR$/projects/Advanced_text_formatting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
+    <list default="true" id="fd57cfde-de06-4921-880b-a8faf2707acd" name="Changes" comment="Add new pages">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/What_is_CSS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Advanced_text_formatting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Document_and_website_structure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/Document_and_website_structure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/awesome-site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/awesome-site.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ac-dc-team.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ac-dc-team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfs/ticket.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/Advanced_text_formatting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Advanced_text_formatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Advanced_text_formatting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\awesome-site\html" />
       <recent name="D:\awesome-site\styles" />
       <recent name="D:\awesome-site\contacts\" />
     </key>
@@ -88,7 +100,12 @@
       <workItem from="1643122979393" duration="90000" />
       <workItem from="1643123098692" duration="211000" />
       <workItem from="1643123337915" duration="6721000" />
-      <workItem from="1643131979021" duration="19787000" />
+      <workItem from="1643131979021" duration="31801000" />
+      <workItem from="1643269597336" duration="8001000" />
+      <workItem from="1643367806651" duration="17020000" />
+      <workItem from="1643444998095" duration="10097000" />
+      <workItem from="1643463436640" duration="12000" />
+      <workItem from="1643463694033" duration="55135000" />
     </task>
     <task id="LOCAL-00001" summary="Оптимизация">
       <created>1642161705142</created>
@@ -139,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642253878080</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add new pages">
+      <created>1643202090826</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643202090826</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +196,8 @@
     <MESSAGE value="Favicon" />
     <MESSAGE value="Add favicon" />
     <MESSAGE value="Add contacts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add contacts" />
+    <MESSAGE value="Add new pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new pages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

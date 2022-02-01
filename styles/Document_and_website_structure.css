@@ -1,0 +1,242 @@
+/*html {*/
+/*    font-family: 'Source Serif Pro', serif;*/
+/*    font-size: 18px;*/
+/*    background-color: #fff;*/
+/*}*/
+/*body {*/
+/*    margin: 1% auto;*/
+/*    padding: 0 20px 20px 20px;*/
+/*    width: 90%;*/
+/*    border: 3px solid black;*/
+/*}*/
+/*h1 {*/
+/*    margin: 0;*/
+/*    padding: 20px 0;*/
+/*    color: black;*/
+/*    text-align: center;*/
+/*}*/
+/*h2 {*/
+/*    margin: 0;*/
+/*    padding: 25px 0;*/
+/*    color: black;*/
+/*    text-align: center;*/
+/*}*/
+/*h3 {*/
+/*    margin: 20px 0 15px 0;*/
+/*}*/
+/*p {*/
+/*    font-size: 20px;*/
+/*    line-height: 1.3;*/
+/*    padding: 10px;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*dl {*/
+/*    font-size: 20px;*/
+/*    line-height: 1.3;*/
+/*    padding: 10px;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*dt {*/
+/*    font-size: 20px;*/
+/*    line-height: 1.3;*/
+/*    margin: 0 auto;*/
+/*    font-weight: 700;*/
+/*}*/
+/*dd {*/
+/*    font-size: 20px;*/
+/*    line-height: 1.3;*/
+/*    padding: 10px;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*blockquote {*/
+/*    margin: 0;*/
+/*    padding: 5px;*/
+/*    background: #f4f4f4;*/
+/*    border-radius: 5px;*/
+/*    border: solid 1px;*/
+/*    max-width: max-content;*/
+/*}*/
+/*.string-quote {*/
+/*    border: solid 1px;*/
+/*    background: #f4f4f4;*/
+/*    border-radius: 5px;*/
+/*    max-width: max-content;*/
+/*    margin: 0 0 50px 0;*/
+/*}*/
+/*figure {*/
+/*    width: 20%;*/
+/*    display: block;*/
+/*    flex-flow: column;*/
+/*    margin: 20px 0 30px 0;*/
+/*}*/
+
+/*figcaption {*/
+/*    background-color: silver;*/
+/*    color: black;*/
+/*    font: italic smaller sans-serif;*/
+/*    padding: 3px;*/
+/*    text-align: center;*/
+/*}*/
+/*.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {*/
+/*    color: #a30008;*/
+/*}*/
+/*.token.atrule, .token.attr-value, .token.keyword {*/
+/*    color: #005282;*/
+/*}*/
+/*.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {*/
+/*    color: #005a38;*/
+/*}*/
+/*.token.cdata, .token.comment, .token.doctype, .token.prolog, .token.punctuation {*/
+/*    color: #6d6d6d;*/
+/*}*/
+/*.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {*/
+/*    color: #1b1b1b;*/
+/*}*/
+/*.single-tags {*/
+/*    background: #f4f4f4;*/
+/*}*/
+/*.html-syntax {*/
+/*    color: #1b1b1b;*/
+/*    letter-spacing: -.0027777778rem;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*    text-rendering: optimizeSpeed;*/
+/*    box-sizing: border-box;*/
+/*    border-left: 6px solid #005282;*/
+/*    font-size: 1rem;*/
+/*    line-height: 1.4;*/
+/*    margin: 0 0 24px;*/
+/*    max-width: 100%;*/
+/*    overflow: auto;*/
+/*    padding: 24px;*/
+/*    background-color: #f4f4f4;*/
+/*}*/
+/*ul {*/
+/*    padding: 10px;*/
+/*}*/
+/*li {*/
+/*    margin-left: 20px;*/
+/*}*/
+/*#back-page {*/
+/*    text-align: left;*/
+/*}*/
+/*#home-page {*/
+/*    text-align: center;*/
+/*}*/
+/*#next-page {*/
+/*    text-align: right;*/
+/*}*/
+
+/*table.text  {*/
+/*    padding: 25px;*/
+/*    width:  100%; !* Ширина таблицы *!*/
+/*}*/
+/*td.right { !* Правая ячейка *!*/
+/*    text-align: right;*/
+/*}*/
+/*td.center {*/
+/*    text-align: center;*/
+/*}*/
+/*td.left {*/
+/*    text-align: left;*/
+/*}*/
+/*.button {*/
+/*    background-color: #005282;*/
+/*    border: 2px solid #005282;*/
+/*    color: #fff;*/
+/*    border-radius: 4px;*/
+/*}*/
+.page-footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 48px 24px;
+    position: relative;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+footer {
+    display: block;
+}
+.page-footer .content-container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.content-container {
+    display: grid;
+}
+.content-container .page-footer-logo {
+    grid-row: 1/2;
+}
+.content-container .page-footer-logo {
+    grid-column: 1/3;
+}
+.page-footer-logo {
+    margin-bottom: 24px;
+}
+div {
+    display: block;
+}
+.content-container .social-mdn {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.page-footer .social {
+    align-items: center;
+    display: flex;
+}
+.content-container .social-moz {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.content-container .footer-legal {
+    grid-row: 7/8;
+    grid-column: 1/3;
+}
+.page-footer .footer-legal {
+    padding-bottom: 20px;
+}
+/*Селектор с атрибутом. Определяет значение для всех тэгов этого вида, у которых есть класс */
+ul[class] {
+    list-style: none; /*Убирает точки на начале несортированного списка*/
+    padding: 25px; /*Отступы с внутренней стороны элемента со всех сторон*/
+}
+li {
+    list-style: none;
+}
+/*blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, h5, li, ol[class], p, ul[class] {*/
+/*    margin: 0;*/
+/*}*/
+body {
+    margin: 0;
+}
+/*ul {*/
+/*    display: block;*/
+/*    list-style-type: disc;*/
+/*    margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0;*/
+/*    margin-inline-end: 0;*/
+/*    padding-inline-start: 40px;*/
+/*}*/
+
+.inline-block {
+    display: inline-block;
+    border: 3px solid black;
+}
+.block {
+    display: block;
+    border: 3px solid black;
+}
+.inline {
+    border: 3px solid black;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
