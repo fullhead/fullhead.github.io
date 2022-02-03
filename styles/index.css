@@ -5,15 +5,16 @@ html {
     background-color: #fff;
     box-sizing: border-box;
     color: #1b1b1b;
-    font-size: 14px;
-    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    font-family: arial,x-locale-body,sans-serif;
 }
 body {
     font-size: 100%;
     min-height: 100vh;
     line-height: 1.75;
-    margin: 0 auto;
+    margin: 0;
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 .logo-image {
     width: 206px;
@@ -79,7 +80,7 @@ body {
     height: auto;
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 25% 75%;
     grid-template-areas:
     "header header"
     "nav main";
@@ -91,7 +92,7 @@ body {
     background-color: #fff;
     grid-area: header;
     padding: 36px 24px 24px;
-
+    border-bottom: #1b1b1b solid 3px;
 }
 .header-nav {
     display: grid;
@@ -104,21 +105,85 @@ body {
     position: relative;
     padding: 0;
 }
-ul[class="main-menu"] {
+ul[class] {
     list-style: none;
 }
 /*Main section*/
 .page-main {
-    background-color: #005a38;
+    background-color: inherit;
     grid-area: main;
+    margin: 25px;
 }
 /*Nav section*/
 .page-nav {
-    background-color: #a30008;
+    background-color: inherit;
     grid-area: nav;
+    margin: 30px;
+    /*border: #1b1b1b solid 1px ;*/
 }
 /*Footer section*/
 .page-footer {
     background-color: #1b1b1b;
     height: 200px;
+    width: 100%;
+}
+details {
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    margin: 14px 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+/**/
+.prev-next {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 5px;
+    font-size: 150%;
+    max-width: 800px;
+}
+.button-prev-next:link {
+    background: #005282;
+    border-radius: 4px;
+    color: #eeeeee;
+    padding: 2px;
+}
+.button-prev-next:visited {
+    color: #1b1b1b;
+}
+h1 {
+    font-size: 250%;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 {
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    letter-spacing: .035rem;
+    line-height: 1.2;
+}
+.top-nav-urls {
+    color: #005282;
+    font-size: 125%;
+}
+article>*+* {
+    margin-top: 1em;
+}
+section {
+    margin-bottom: 12px;
+}
+.summary {
+    max-width: 85ch;
 }
