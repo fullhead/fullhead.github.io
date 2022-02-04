@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fd57cfde-de06-4921-880b-a8faf2707acd" name="Changes" comment="Add new pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <workItem from="1643367806651" duration="17020000" />
       <workItem from="1643444998095" duration="10097000" />
       <workItem from="1643463436640" duration="12000" />
-      <workItem from="1643463694033" duration="73758000" />
+      <workItem from="1643463694033" duration="74514000" />
     </task>
     <task id="LOCAL-00001" summary="Оптимизация">
       <created>1642161705142</created>
@@ -161,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643919429013</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add new pages">
+      <created>1643920414783</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643920414783</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
